@@ -1070,7 +1070,6 @@
                 <div class="panel-card">
                     <h3>
                         Lịch sử phát hiện
-                        <span class="count-badge" id="historyCount">0</span>
                     </h3>
                     <div class="detection-history" id="detectionHistory">
                         <div class="empty-state">
@@ -1178,7 +1177,6 @@
             if (isCapturing) return;
             isCapturing = true;
             simulateFPS();
-            simulateStats();
             // Start generating random detections
             detectionInterval = setInterval(addRandomDetection, 2500);
         }
